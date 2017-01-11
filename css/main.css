@@ -10,7 +10,6 @@ body{
 }
 /*nav*/
 .head{
-	height: 50px;
 	background-color: white;
 	border-bottom: solid 1px #DDDDDD;
 }
@@ -18,10 +17,15 @@ body{
 	height: 50px;
 }
 .title{
+	color: #507AC8;
 	font-size: 24px;
 	height: 50px;
 	line-height: 50px;
 	margin-left: 10px;
+}
+.sub-title{
+	margin-left: 10px;
+	color: gray;
 }
 .nav-link ul{
 	float: right;
@@ -41,16 +45,22 @@ body{
 }
 .nav-link ul li:hover a, .nav-link ul li.active a{
 	color: #278ED7;
+	cursor: pointer;
 }
 /*gallery*/
+.body{
+	margin-top: 50px;
+}
 .body-gallery{
 	padding: 20px;
 }
 .gline{
-	height: 350px;
-	border-bottom: solid 1px #DDDDDD;
+	
 }
-.title-2{
+.p-title-line{
+	padding: 10px;
+}
+.p-title{
 	font-size: 20px;
 	color: grey;
 }
@@ -58,4 +68,43 @@ body{
 	float: right;
 	color: #F35B25;	
 	text-decoration: underline;
+}
+.showmore:hover{
+	color: #278ED7;
+	text-decoration: underline;
+}
+.showmore:hover, .p-tcp-title-line:hover, .p-tcp-img-line:hover, .action-group i:hover{
+	cursor: pointer;
+}
+.p-tcp-line{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.p-tcp{
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+	border: solid 1px #DDDDDD;
+}
+.p-tcp:hover{
+	box-shadow: 0px 1px 13px rgba(13, 19, 24, 0.2);
+}
+.p-tcp-title-line{
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+.p-tcp-img-line{
+	height: 240px;
+}
+.p-tcp-bottom-line{
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.action-group{
+	float: right;
 }
