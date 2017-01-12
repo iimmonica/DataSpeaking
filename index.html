@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title>Noora</title>
@@ -8,149 +9,107 @@
 		<link rel="stylesheet" href="css/bootstrap-overwrite.css" />
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
+
 	<body>
 		<div class="container-fluid">
-	<div class="navbar-fixed-top row-fluid head">
-		<div class="span12">
-			<div class="row-fluid nav">
-				<div class="span4 nav-title">
-					<i class="logo"></i>
-					<span class="title">Noora</span>
-					<span class="sub-title">Charts Gallery and Posters</span>
-				</div>
-				<div class="span4 nav-tool">
-				</div>
-				<div class="span4 nav-link" >
-					<ul>
-						<li tcp="gallery" class="active"><a>Gallery</a></li>
-						<li tcp="templet"><a>Templets</a></li>
-						<li tcp="chart"><a>Charts</a></li>
-						<li tcp="poster"><a>Posters</a></li>
-					</ul>
+			<div class="navbar-fixed-top row-fluid head">
+				<div class="span12">
+					<div class="row-fluid nav">
+						<div class="span4 nav-title">
+							<i class="logo"></i>
+							<span class="title">Noora</span>
+							<span class="sub-title">Charts Gallery and Posters</span>
+						</div>
+						<div class="span4 nav-tool">
+						</div>
+						<div class="span4 nav-link">
+							<ul>
+								<li tcp="templet" class="active">
+									<a>Templets</a>
+								</li>
+								<li tcp="chart">
+									<a>Charts</a>
+								</li>
+								<li tcp="poster">
+									<a>Posters</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="body">
-	<div class="row-fluid body-gallery">
-		<div class="span12">
-			<div class="row-fluid gline">
-				<div class="span12">
-					<div class="p-title-line">
-						<span class="p-title">Templets</span>
-						<a tcp="templet" class="showmore">more</a>
-					</div>
-					<div tcp="templet" class="p-tcp-line">
-						<div class="p-tcp">
-							<div class="p-tcp-title-line">
-								<span>Templet Title</span>
-							</div>
-							<div class="p-tcp-img-line">
-								<img src="" alt="" />
-							</div>
-							<div class="p-tcp-bottom-line">
-								<span class="update-time">01-12</span>
-								<span class="action-group">
-									<i>watch</i>
-									<i>getImg</i>
-									<i>getData</i>
-								</span>
+			<div class="body">
+				<div class="row-fluid body-page body-gallery" id="chartGallery">
+					<div class="span12">
+						<div class="row-fluid gline">
+							<div class="span12">
+						<!--		<div class="p-title-line">
+									<span class="p-title">Templets</span>
+									<a tcp="templet" class="showmore">more</a>
+								</div>
+-->								<div tcp="templet" class="row-fluid p-tcp-box">
+									<div class="span3 p-tcp">
+										<div class="p-tcp-title-line">
+											<span>Templet Title</span>
+										</div>
+										<div class="p-tcp-img-line">
+											<img src="" alt="" />
+										</div>
+										<div class="p-tcp-bottom-line">
+											<span class="update-time">01-12</span>
+											<span class="action-group">
+												<i>watch</i>
+												<i>getImg</i>
+												<i>getData</i>
+											</span>
+										</div>
+									</div>
+									<div class="span3 p-tcp"></div>
+									<div class="span3 p-tcp"></div>
+									<div class="span3 p-tcp"></div>
+								</div>
 							</div>
 						</div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
 					</div>
 				</div>
-			</div>
-			<div class="row-fluid gline">
-				<div class="span12">
-					<div class="p-title-line">
-						<span class="p-title">Charts</span>
-						<a tcp="chart" class="showmore">more</a>
-					</div>
-					<div tcp="chart" class="p-tcp-line">
-						<div class="p-tcp">
-							<div class="p-tcp-title-line">
-								<span>Chart Title</span>
-							</div>
-							<div class="p-tcp-img-line">
-								<img src="" alt="" />
-							</div>
-							<div class="p-tcp-bottom-line">
-								<span class="update-time">01-12</span>
-								<span class="action-group">
-									<i>watch</i>
-									<i>edit</i>
-									<i>getImg</i>
-									<i>getData</i>
-								</span>
+				<div class="row-fluid body-page body-chart-view" id="chartView" style="display: none;">
+					<div class="span12">
+						<div class="row-fluid">
+							<div class="span12 tcp-view-box" id="tcpViewBox">
 							</div>
 						</div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
 					</div>
 				</div>
-			</div>
-			<div class="row-fluid gline">
-				<div class="span12">
-					<div class="p-title-line">
-						<span class="p-title">Posters</span>
-						<a tcp="poster" class="showmore">more</a>
-					</div>
-					<div tcp="poster" class="p-tcp-line">
-						<div class="p-tcp">
-							<div class="p-tcp-title-line">
-								<span>Poster Title</span>
+				<div class="row-fluid body-page body-chart-edit" id="chartEdit" style="display: none;">
+					<div class="span12">
+						<div class="row-fluid">
+							<div class="span2">
 							</div>
-							<div class="p-tcp-img-line">
-								<img src="" alt="" />
+							<div class="span6">
 							</div>
-							<div class="p-tcp-bottom-line">
-								<span class="update-time">01-12</span>
-								<span class="action-group">
-									<i>watch</i>
-									<i>edit</i>
-									<i>getImg</i>
-									<i>getData</i>
-								</span>
+							<div class="span4">
 							</div>
 						</div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
-						<div class="p-tcp"></div>
+					</div>
+				</div>
+				<div class="row-fluid body-page body-poster-edit" id="posterEdit" style="display: none;">
+					<div class="span12">
+						<div class="row-fluid">
+							<div class="span12">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row-fluid body-chart-edit" style="display: none;">
-		<div class="span12">
-			<div class="row-fluid">
-				<div class="span2">
-				</div>
-				<div class="span6">
-				</div>
-				<div class="span4">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row-fluid body-poster-edit" style="display: none;">
-		<div class="span12">
-			<div class="row-fluid">
-				<div class="span12">
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
 
-	<script type="text/javascript" src="js/jquery-3.1.0.js" ></script>
-	<script type="text/javascript" src="js/bootstrap.js" ></script>
-	<script type="text/javascript" src="js/d3.js" ></script>
-	<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/d3.js"></script>
+		<script type="text/javascript" src="js/echarts.js" ></script>
+		<script type="text/javascript" src="js/echarts-worldcloud.min.js" ></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/chart.js" ></script>
 	</body>
+
 </html>
