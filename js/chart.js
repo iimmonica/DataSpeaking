@@ -19,7 +19,8 @@ function loadViewChart() {
 				textAlign: 'center', 
 				left: 'center',
 				textStyle: {
-					fontWeight: 'normal'
+					fontWeight: 'normal',
+					fontSize: 22
 				}
 			},
 			series: [{

@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	border-collapse: collapse;
+	font-size: 14px;
 }
 body{
 	background-color: #F8F8FA;
@@ -26,6 +27,19 @@ body{
 .sub-title{
 	margin-left: 10px;
 	color: gray;
+}
+.nav-tool>div{
+	display: none;
+	margin: auto;
+	color: #F35B25;
+	height: 50px;
+	line-height: 50px;
+	width: 120px;
+	text-align: center;
+	border-bottom: 1px solid #F35B25;
+}
+.nav-tool>div:hover{
+	background-color: #F8F8FA;
 }
 .nav-link ul{
 	float: right;
@@ -103,6 +117,29 @@ body{
 }
 
 /*view*/
+.tcp-view-back{
+	float: left;
+}
+.tcp-view-tool{
+	float: right;
+	padding-top: 20px;
+}
+.tcp-tool{
+	float: left;
+	border: 1px solid #DDDDDD;
+	color: black;
+	border-radius: 3px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-right: 10px;
+}
+.tcp-tool:hover{
+	border: 1px solid #278ED7;
+	color: #278ED7;
+	cursor: pointer;
+}
 .tcp-view-box{
 	height: 700px;
 	min-width: 900px;
