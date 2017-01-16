@@ -1,19 +1,25 @@
-function loadViewChart() {
-	$(function() {
-		myChart = echarts.init(document.getElementById('tcpViewBox'));
-		defaultOption = {
-			title: {
-				text: "标题",
-				textAlign: 'center',
-				left: 'center'
-			},
+$(document).ready(function() {
+	if(!window.DefaultOption){
+		DefaultOption = {
 			color: [
 				'#66CCFF', '#9999CC', '#66CC33', '#FFCC33', '#FF6666', '#339999', '#6699FF', '#CC99FF',
 				'#99CC99', '#CCCC66', '#CC9999', '#99CCCC', '#96DCFF', '#B9B9DC', '#85D65D', '#FFD866',
 				'#FF9696', '#40BFBF', '#96B9FF', '#E2C5FF', '#B9DCB9', '#D8D88C', '#DCB9B9', '#B9DCDC',
 			]
 		};
-		option = {
+	}
+});
+function loadViewChart(type) {
+		myChart = echarts.init(document.getElementById('tcpViewBox'));
+		switch(type){
+			case 'wordCloud': loadWordCloudChart(myChart); break;
+		}
+		
+
+}
+
+function loadWordCloudChart(myChart){
+	option = {
 			title: {
 				text: "2016年度热词",
 				textAlign: 'center', 
@@ -32,7 +38,7 @@ function loadViewChart() {
 				textStyle: {
 					normal: {
 						color: function(params) {
-							 return defaultOption.color[params.dataIndex%24];
+							 return DefaultOption.color[params.dataIndex%24];
 						}
 					},
 					emphasis: {
@@ -53,5 +59,4 @@ function loadViewChart() {
 			}
 			myChart.setOption(option);
 		});
-	});
 }

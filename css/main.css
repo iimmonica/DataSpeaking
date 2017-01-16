@@ -49,13 +49,17 @@ body{
 	float: left;
 	height: 50px;
 	line-height: 50px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .nav-link ul li:hover, .nav-link ul li.active{
 	color: #278ED7;
 	border-bottom: solid 1px #278ED7;
-	cursor: hand;
+	cursor: pointer;
 	border-width: 2px;
+}
+.nav-link ul li:hover{
+	background-color: #F8F8FA;
 }
 .nav-link ul li:hover a, .nav-link ul li.active a{
 	color: #278ED7;
@@ -139,6 +143,7 @@ body{
 	border: 1px solid #278ED7;
 	color: #278ED7;
 	cursor: pointer;
+	background-color: white;
 }
 .tcp-view-box{
 	height: 700px;

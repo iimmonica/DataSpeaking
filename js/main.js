@@ -2,5 +2,5 @@
  	$(".body-page").hide();
  	$("#chartView").show();
  
- 	loadViewChart();
+ 	loadViewChart('wordCloud');
  });
