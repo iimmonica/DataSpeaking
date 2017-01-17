@@ -31,7 +31,7 @@ function loadWordCloudChart(myChart){
 			},
 			series: [{
 				type: 'wordCloud',
-				gridSize: 50,
+				gridSize: 30,
 				sizeRange: [12, 50],
 				rotationRange: [0, 0],
 				shape: 'rect',
